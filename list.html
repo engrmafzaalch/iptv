@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+  <div class="nav">
+    <div class="logo">
+      <img src="./icon.png" alt="IPTV">
+    </div>
+    <ul class="ml-auto">
+      <li><a href="/">NEWS</a></li>
+      <li><a href="list.html">My List</a></li>
+    </ul>
+  
+  </div>
+
+  <main>
+    <div class="container">
+        <div class="card">
+            <h2 class="card-title">Playlist upload to Smart IPTV</h2>
+          <div class="card-body">
+              <ul>
+                  <li>Select proper EPG country to correctly match channel electronic programming language</li>
+                  <li>Use Disable plist logos to disable playlist logos or Override app logos (tvg-logo) to only use playlist logos</li>
+                  <li> Use Save online only if you have problems loading playlist on your TV due to low memory</li>
+                  <li>Use Detect EPG to automatically detect EPG URL included in your playlist (tvg-url, url-tvg, x-tvg-url)</li>
+                  <li>Use Disable Groups to disable playlist groups when uploading multiple playlists</li>
+              </ul>
+            <h2>Upload playlist Files or external playlist URLs with auto-update</h2>
+                <form class="list-form">
+                    <div class="form-row">
+                      <div class="form-group col-md-6 mac-div">
+                        <label for="mac">MAC</label>
+                        <input type="text" class="form-control" id="mac" placeholder="00:aa:bb:cc:dd:11">
+                      </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="file">File</label>
+                                <input type="file" id="file" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="url">URL</label>
+                                <input type="text" class="form-control" id="url" placeholder="M3U or TXT playlist URLr">
+                            </div>
+                            
+                                <div class="form-group">
+                                <label for="epg">EPG</label>
+                                <input type="text" class="form-control" id="epg" placeholder="XMLTV EPG URL">
+                                </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-control">Send</button>
+                  </form>
+                  <h2>Delete playlist(s)</h2>
+                  <form class="list-form">
+                    <div class="form-group">
+                        <label for="mac-d">MAC</label>
+                        <input type="text" class="form-control" id="mac-d" placeholder="M3U or TXT playlist URLr">
+                    </div>
+                    <button type="submit" class="btn btn-danger form-control">Send</button>
+                  </form>
+          </div>
+        </div>
+  </main>
+  </div>
+
+  <!-- Add your site or application content here -->
+
+</body>
+
+</html>
